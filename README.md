@@ -52,6 +52,10 @@ if dstat --sleep; then
 fi
 ```
 
+### Caveats
+
+The tool uses APIs that interact with the active login session. Thus, it cannot function if there's nobody logged on to the system. An error code of `4` is returned in that scenario, so it can at least be detected by your script. If anyone knows of a way to query for the sleep status of the display while a user is NOT logged in, please file a PR!
+
 Please report any bugs or issues you encounter. This idea was inspired by [this AskDifferent post][1], and is a somewhat more efficient followup to an earlier solution I came up with: [display-is-sleeping][2].
 
 [1]: https://apple.stackexchange.com/questions/466236/check-if-display-sleep-on-apple-silicon-in-bash
