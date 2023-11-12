@@ -12,7 +12,7 @@ void printUsage() {
     printf("The program does not output anything—it exits with a status code:\n");
     printf("    0 (true)       display is sleeping or locked\n");
     printf("    1 (false)      display is NOT sleeping or locked\n");
-    printf("    2              invalid commandline arguments\n");
+    printf("    2              invalid commandline argument\n");
     printf("    3              error querying display status\n");
     printf("    4              no login session (cannot operate in this condition)\n");
 }
