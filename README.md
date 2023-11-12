@@ -4,7 +4,7 @@
 
 This is a small Objective-C program that reports the current sleeping/awake status of the screen or locked/unlocked status of the login session. It's self-contained Universal Binary that runs on Apple Silicon and Intel-based Macs.
 
-It takes a single argument (`-s`/`--sleep`, or `-l`/`--lock`) to select which detail to query. The program will not output anything, instead it returns an exit code to indicate the status. This makes it well-suited for integration with shell scripts.
+It requires a single argument (`-s`/`--sleep`, or `-l`/`--lock`) to select which detail to query. The program does not produce any output, instead it returns an exit code to indicate the status. This makes it well-suited for integration with shell scripts.
 
 The meaning of the exit codes are as follows:
 
@@ -19,8 +19,8 @@ The meaning of the exit codes are as follows:
 ### Install
 
 1. Download the latest [release](https://github.com/luckman212/dstat/releases)
-2. Extract the `dstat` program to a directory in your `$PATH` — if you're unsure, `/usr/local/bin` is a solid choice.
-3. Execute `dstat` from your shell or scripting environment (bash, zsh, etc)
+2. Unzip `dstat.zip` and copy the `dstat` program to a directory in your `$PATH` — if you're unsure, `/usr/local/bin` is a solid choice.
+3. Execute `dstat <arg>` from your shell or scripting environment (bash, zsh, etc)
 
 ### Usage
 
